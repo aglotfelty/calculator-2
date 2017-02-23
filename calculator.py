@@ -46,6 +46,9 @@ while True:
         if operator == "square":
             squared = square(num1)
             print squared
+        elif operator == "cube":
+            cubed = cube(num1)
+            print cubed 
 
 
 
