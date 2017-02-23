@@ -34,6 +34,9 @@ while True:
         elif operator == "/":
             division = divide(num1, num2)
             print division
+        elif operator == "pow":
+            raised_to_the_power = power(num1, num2)
+            print raised_to_the_power
     else:
         try:
             num1 = int(calculation_list[1])
