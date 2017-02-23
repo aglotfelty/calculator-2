@@ -23,8 +23,15 @@ while True:
     if operator == "+":
         addition = add(num1, num2) 
         print addition
-    if operator == "-":
+    elif operator == "-":
         subtraction = subtract(num1, num2)
         print subtraction
+    elif operator == "*":
+        multiplication = multiply(num1, num2)
+        print multiplication
+    
+
+
+
 
      
