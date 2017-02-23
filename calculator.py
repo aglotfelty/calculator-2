@@ -37,6 +37,9 @@ while True:
         elif operator == "pow":
             raised_to_the_power = power(num1, num2)
             print raised_to_the_power
+        elif operator == "mod":
+            remainder = mod(num1, num2)
+            print remainder
     else:
         try:
             num1 = int(calculation_list[1])
