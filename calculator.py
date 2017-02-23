@@ -10,10 +10,21 @@ from arithmetic2 import *
 while True: 
     user_calculation = raw_input("> ")
     calculation_list = user_calculation.split(" ")
-    if calculation_list[0] == "+":
-        addition = add(int(calculation_list[1]), int(calculation_list[2])) 
+    operator = calculation_list[0]
+    try:
+        num1 = int(calculation_list[1])
+        num2 = int(calculation_list[2]) 
+    except IndexError:
+        if operator == "q":
+            break
+        else:
+            print "I don't understand."
+            continue
+    if operator == "+":
+        addition = add(num1, num2) 
         print addition
-    elif calculation_list[0] == 'q':
-        break
+    if operator == "-":
+        subtraction = subtract(num1, num2)
+        print subtraction
 
      
