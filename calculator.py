@@ -29,7 +29,10 @@ while True:
     elif operator == "*":
         multiplication = multiply(num1, num2)
         print multiplication
-    
+    elif operator == "/":
+        division = divide(num1, float(num2))
+        print division
+
 
 
 
